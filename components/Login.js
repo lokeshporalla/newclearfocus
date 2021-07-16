@@ -13,11 +13,11 @@ class Login extends React.Component{
             < ReactBootstrap.Form>
             < ReactBootstrap.Form.Group controlId="exampleForm.ControlInput1">
               < ReactBootstrap.Form.Label><b>Course Id</b></ ReactBootstrap.Form.Label>
-              < ReactBootstrap.Form.Control type="text" placeholder="Course Id" />
+              < ReactBootstrap.Form.Control type="text" value="1" placeholder="Course Id" />
             </ ReactBootstrap.Form.Group>
             < ReactBootstrap.Form.Group controlId="exampleForm.ControlInput1">
               < ReactBootstrap.Form.Label><b>Course Name</b></ ReactBootstrap.Form.Label>
-              < ReactBootstrap.Form.Control type="text" placeholder="Course Name" />
+              < ReactBootstrap.Form.Control type="text" value="REACT JS FULLSTACK WEB DEVELOPMENT " placeholder="Course Name" />
             </ ReactBootstrap.Form.Group>
             {/* < ReactBootstrap.Form.Group controlId="exampleForm.ControlInput1">
               < ReactBootstrap.Form.Label>Duration</ ReactBootstrap.Form.Label>
@@ -30,21 +30,22 @@ class Login extends React.Component{
                    
                   < ReactBootstrap.Form.Group controlId="exampleForm.ControlInput1">
              
-              < ReactBootstrap.Form.Control type="text" placeholder="Duration" />
+              < ReactBootstrap.Form.Control type="text" value="3" placeholder="Duration" />
             </ ReactBootstrap.Form.Group>
                   </div>
                   <div class="col-4" id="select1">
                   < ReactBootstrap.Form.Control as="select">
-                <option>Days</option>
+                 <option>Months</option>
+                      <option>Days</option>
                 <option>Weeks</option>
-                <option>Months</option>
+               
               </ ReactBootstrap.Form.Control>
                   </div>
                 </div>
             </div>
             < ReactBootstrap.Form.Group controlId="exampleForm.ControlSelect1">
               < ReactBootstrap.Form.Label><b>Level</b></ ReactBootstrap.Form.Label>
-              < ReactBootstrap.Form.Control as="select">
+              < ReactBootstrap.Form.Control as="select"  value="Advanced">
                 <option>Beginer</option>
                 <option>Intermediate</option>
                 <option>Advanced</option>
@@ -52,7 +53,7 @@ class Login extends React.Component{
             </ ReactBootstrap.Form.Group>
             < ReactBootstrap.Form.Group controlId="exampleForm.ControlSelect1">
               < ReactBootstrap.Form.Label><b>Status</b></ ReactBootstrap.Form.Label>
-              < ReactBootstrap.Form.Control as="select">
+              < ReactBootstrap.Form.Control as="select" value="Active">
                 <option>Active</option>
                 <option>Inactive</option>
               </ ReactBootstrap.Form.Control>
@@ -70,7 +71,7 @@ class Login extends React.Component{
 
             < ReactBootstrap.Form.Group controlId="exampleForm.ControlTextarea1">
               < ReactBootstrap.Form.Label><b>Description</b></ ReactBootstrap.Form.Label>
-              < ReactBootstrap.Form.Control as="textarea" rows={3} placeholder="Descrption" />
+              < ReactBootstrap.Form.Control as="textarea" rows={3} value="React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies" placeholder="Descrption" />
             </ ReactBootstrap.Form.Group>
           </ ReactBootstrap.Form>
           <br />
